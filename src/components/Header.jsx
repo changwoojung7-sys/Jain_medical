@@ -12,7 +12,7 @@ export default function Header({ routes }) {
     <header className="header">
       <div className="container header-inner">
         <a className="brand" href="#home" onClick={(e) => { e.preventDefault(); scrollToId("home"); }}>
-          <span className="brand-badge">J</span>
+          <img src="/src/assets/logo.png" alt="Jain Medical Logo" className="brand-logo" />
           <span>{siteConfig.companyName}</span>
         </a>
 
