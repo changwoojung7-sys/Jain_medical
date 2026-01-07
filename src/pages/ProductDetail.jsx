@@ -28,15 +28,23 @@ export default function ProductDetail({ product, onBack }) {
         </div>
       )}
 
-      <h4>주요 특징</h4>
-      <ul>
-        {product.features.map((f) => (
-          <li key={f}>{f}</li>
-        ))}
-      </ul>
+      {product.features && (
+        <>
+          <h4>주요 특징</h4>
+          <ul>
+            {product.features.map((f) => (
+              <li key={f}>{f}</li>
+            ))}
+          </ul>
+        </>
+      )}
 
-      <h4>적용 분야</h4>
-      <p>{product.application}</p>
+      {product.application && (
+        <>
+          <h4>적용 분야</h4>
+          <p>{product.application}</p>
+        </>
+      )}
 
       <ContactCta />
     </section>

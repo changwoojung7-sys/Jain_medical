@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Section from "../components/Section";
-import ContactCta from "../components/ContactCta";
+
 import { products } from "../data/products";
 import ProductDetail from "./ProductDetail";
 
@@ -47,7 +47,7 @@ export default function Products() {
         </section>
       ))}
 
-      <ContactCta />
+
     </Section>
   );
 }

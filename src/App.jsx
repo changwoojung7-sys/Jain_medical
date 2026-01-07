@@ -8,7 +8,7 @@ import Quality from "./pages/Quality.jsx";
 import Support from "./pages/Support.jsx";
 import ProductDetail from "./pages/ProductDetail";
 
-{window.location.pathname.startsWith("/products/") && <ProductDetail />}
+
 
 const routes = [
   { id: "home", label: "홈", component: <Home /> },
