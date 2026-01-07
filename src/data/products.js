@@ -1,4 +1,4 @@
-import pathoCutterR22 from "../assets/products/pathology/patho_cutter_r_22.png";
+import pathoCutterR22Detail from "../assets/products/pathology/patho_cutter_r_22_detail.png";
 
 import pathoCutterR35Detail from "../assets/products/pathology/patho_cutter_r_35_detail_v2.png";
 import pathoCutterHpR35 from "../assets/products/pathology/patho_cutter_hp_r_35.png";
@@ -10,7 +10,8 @@ export const products = [
     id: "patho-cutter-r-22",
     category: "임상병리실 소모품",
     name: "파소 커터 R (22°)",
-    image: pathoCutterR22,
+    image: pathoCutterR22Detail,
+    detailImage: pathoCutterR22Detail,
     summary: "날카로운 예리함을 추구한 교체날",
     detailDescription: sharedDetailDescription,
     features: [
