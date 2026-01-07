@@ -11,29 +11,35 @@ export default function About() {
 
       {/* 인사말 & 경영 철학 */}
       <section className="about-greeting">
-        <img src={ceoImg} alt="자인메디컬 현장" />
+        <div className="greeting-image-wrapper">
+          <img src={ceoImg} alt="자인메디컬 현장" />
+        </div>
 
-        <div className="card">
-          <h3>인사말 & 경영 철학</h3>
-          <p>
-            자인메디컬은 진단검사실 현장에서 실제로 사용되는 소모품이 <br />
-            얼마나 정확하고 안정적으로 공급되어야 하는지 잘 알고 있습니다.
-          </p>
-          <p>
-            검사 결과의 신뢰는 장비보다, <br />
-            그 장비를 받쳐주는 소모품에서 시작된다고 생각합니다.
-          </p>
-          <p>
-            저희는 화려한 말보다 <br />
-            정해진 품질, 약속된 납기, 그리고 책임 있는 대응을 우선합니다.<br />
-            현장에서 불편함 없이 사용할 수 있는 공급, <br />
-            필요할 때 바로 연결되는 파트너가 되겠습니다.
-          </p>
-          <p>
-            작은 회사이지만, <br />
-            오래 함께할 수 있는 공급사가 되기 위해 기본을 지켜가고 있습니다.
-          </p>
-          <strong>대표 윤석신</strong>
+        <div className="card greeting-card">
+          <div className="greeting-content">
+            <h3>설명 및 이론</h3>
+            <p>
+              {siteConfig.companyName}은 진단검사실 현장에서 실제로 사용되는 가입자가
+              어느 정도인지 확인하고 공급받을 수 있는지 잘 알고 있습니다.
+            </p>
+            <p>
+              검사 결과를 신뢰하는 사람보다,
+              그 장비를 받는 사람에게서 수리를 시작한다고 생각합니다.
+            </p>
+            <p>
+              우리는 화려한 말보다
+              뛰어난 품질, 약속된 납기, 그리고 권한을 갖고 있는 것을 우선합니다.
+              현장에서 분리함 없이 사용할 수 있는 공급업체,
+              바로 연결되는 파트너가 있습니다.
+            </p>
+            <p>
+              작은 회사이지만,
+              오래 함께 할 수 있는 공급업체를 위해 기본적으로 보호하고 있습니다.
+            </p>
+            <div className="signature">
+              <strong>대표 {siteConfig.ceoName}</strong>
+            </div>
+          </div>
         </div>
       </section>
 
