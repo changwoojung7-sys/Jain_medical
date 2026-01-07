@@ -7,7 +7,8 @@ import Products from "./pages/Products.jsx";
 import Quality from "./pages/Quality.jsx";
 import Support from "./pages/Support.jsx";
 import ProductDetail from "./pages/ProductDetail";
-
+import NoticeTicker from "./components/NoticeTicker.jsx";
+import { initialNotices } from "./data/boardData.js";
 
 
 const routes = [
@@ -19,9 +20,17 @@ const routes = [
 ];
 
 export default function App() {
+  const handleTickerClick = () => {
+    const el = document.getElementById("support");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <div className="app">
       <Header routes={routes} />
+      <NoticeTicker initialData={initialNotices} onClick={handleTickerClick} />
       <main className="main">
         {routes.map((r) => (
           <section key={r.id} id={r.id} className="page-section">

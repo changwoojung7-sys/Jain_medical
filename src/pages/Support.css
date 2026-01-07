@@ -1,0 +1,40 @@
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.tab {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    /* Larger font */
+    font-weight: 600;
+    color: #a0aec0;
+    /* Lighter grey for inactive */
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tab:hover {
+    color: #38b2ac;
+    /* Brighter teal on hover */
+}
+
+.tab.active {
+    color: #38b2ac;
+    /* Bright teal for active */
+    border-bottom-color: #38b2ac;
+    font-weight: 800;
+    font-size: 1.35rem;
+    /* Slightly larger active */
+}
+
+.tab-content {
+    margin-bottom: 4rem;
+    min-height: 400px;
+    /* Prevent layout shift */
+}
