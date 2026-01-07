@@ -18,16 +18,8 @@ export default function NoticeTicker({ initialData, onClick }) {
         // 2. Sort by ID descending
         const newest = items[0];
 
-        // 3. Check if within 2 weeks
-        const today = new Date();
-        const noticeDate = new Date(newest.date);
-        const diffTime = Math.abs(today - noticeDate);
-        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-        // Logic: if diffDays <= 14, show it.
-        if (diffDays <= 14) {
-            setLatestNotice(newest);
-        }
+        // 3. Always show the latest notice (User request)
+        setLatestNotice(newest);
     }, [initialData]);
 
     if (!latestNotice) return null;
