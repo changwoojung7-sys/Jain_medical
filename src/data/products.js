@@ -5,6 +5,7 @@ import chem from "../assets/products/lab/chemistry.jpg";
 import elec from "../assets/products/lab/electrolyte.jpg";
 import immuno from "../assets/products/lab/immunoassay.jpg";
 import autoLab from "../assets/products/lab/automation.jpg";
+import pathoCutters from "../assets/products/pathology/patho_cutters.png";
 
 export const products = [
   {
@@ -91,5 +92,45 @@ export const products = [
       "업무 효율 향상",
     ],
     application: "대형 검사실",
+  },
+  {
+    id: "patho-cutter-r",
+    category: "임상병리 제품",
+    name: "Patho Cutter R",
+    image: pathoCutters, // Using the single image for all products in this series for now, or specific if available
+    summary: "35° 칼날 각도, 50매입, ERMA 마이크로톰 칼날",
+    features: [
+      "35° 칼날 각도",
+      "50매입/1박스",
+      "마이크로톰 전용 칼날",
+      "ERMA 기술력의 정밀 절삭"
+    ],
+    application: "임상병리과, 조직검사실",
+  },
+  {
+    id: "patho-cutter-ii",
+    category: "임상병리 제품",
+    name: "Patho Cutter II",
+    image: pathoCutters,
+    summary: "표준형 마이크로톰 칼날",
+    features: [
+      "표준형 칼날",
+      "안정적인 절삭력",
+      "50매입/1박스"
+    ],
+    application: "임상병리과, 조직검사실",
+  },
+  {
+    id: "patho-cutter-hp",
+    category: "임상병리 제품",
+    name: "Patho Cutter HP",
+    image: pathoCutters,
+    summary: "고성능 마이크로톰 칼날",
+    features: [
+      "고성능 내구성",
+      "특수 코팅 처리",
+      "일관된 절편 품질"
+    ],
+    application: "임상병리과, 연구실",
   },
 ];

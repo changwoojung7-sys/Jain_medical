@@ -48,11 +48,11 @@ export default function About() {
         <h3>연혁 및 조직 구성</h3>
 
         <ul className="timeline">
-          <li><span>2020</span> 자인메디컬 설립</li>
-          <li><span>2021</span> 병원·검사기관 납품 시작</li>
-          <li><span>2022</span> 제품 라인업 확장</li>
-          <li><span>2023</span> 물류·품질 관리 체계 고도화</li>
-          <li><span>2024</span> 안정적 거래처 확대</li>
+          <li><span>2013.04</span> 자인메디컬 설립 (4월 10일)</li>
+          <li><span>2015</span> 주요 종합병원 납품 계약 체결</li>
+          <li><span>2018</span> 진단검사 소모품 유통망 확장</li>
+          <li><span>2021</span> 물류 센터 확장 및 품질 관리 시스템 도입</li>
+          <li><span>2024</span> 신규 파트너십 체결 및 사업 영역 확대</li>
         </ul>
 
         <p className="goal">
