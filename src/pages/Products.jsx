@@ -6,7 +6,7 @@ import ProductDetail from "./ProductDetail";
 
 export default function Products() {
   const [selected, setSelected] = useState(null);
-  const groups = ["혈액검사 제품", "임상검사실 장비", "임상병리 제품"];
+  const groups = ["임상병리실 소모품"];
 
   // 🔵 상세 페이지
   if (selected) {

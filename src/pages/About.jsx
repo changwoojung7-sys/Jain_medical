@@ -1,4 +1,5 @@
 import Section from "../components/Section.jsx";
+import { siteConfig } from "../config/siteConfig.js";
 import ceoImg from "../assets/about/ceo_lab.jpg";
 import mapImg from "../assets/about/map_placeholder.jpg";
 
