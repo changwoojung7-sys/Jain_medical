@@ -13,7 +13,7 @@ export default function ContactCta() {
   const mailto = useMemo(() => {
     const subject = `[${siteConfig.companyName}] 제품 문의/견적 요청`;
     const body =
-`회사/기관: ${form.company}
+      `회사/기관: ${form.company}
 담당자: ${form.name}
 연락처: ${form.phone}
 이메일: ${form.email}
@@ -33,15 +33,20 @@ ${form.message}
         </div>
         <div className="right">
           <a className="btn primary" href={mailto}>메일로 보내기</a>
-          <a className="btn" href={`tel:${siteConfig.phone.replaceAll("-", "")}`}>전화하기</a>
+          <button
+            className="btn"
+            onClick={() => alert(`문의 전화: ${siteConfig.phone}`)}
+          >
+            전화하기
+          </button>
         </div>
       </div>
 
       <div className="grid" style={{ gridTemplateColumns: "repeat(2, 1fr)" }}>
-        <Field label="회사/기관명" value={form.company} onChange={(v)=>setForm({ ...form, company: v })} />
-        <Field label="담당자명" value={form.name} onChange={(v)=>setForm({ ...form, name: v })} />
-        <Field label="연락처" value={form.phone} onChange={(v)=>setForm({ ...form, phone: v })} placeholder="010-0000-0000" />
-        <Field label="이메일" value={form.email} onChange={(v)=>setForm({ ...form, email: v })} placeholder="name@company.com" />
+        <Field label="회사/기관명" value={form.company} onChange={(v) => setForm({ ...form, company: v })} />
+        <Field label="담당자명" value={form.name} onChange={(v) => setForm({ ...form, name: v })} />
+        <Field label="연락처" value={form.phone} onChange={(v) => setForm({ ...form, phone: v })} placeholder="010-0000-0000" />
+        <Field label="이메일" value={form.email} onChange={(v) => setForm({ ...form, email: v })} placeholder="name@company.com" />
       </div>
 
       <div style={{ marginTop: 10 }}>

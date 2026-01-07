@@ -70,7 +70,7 @@ export default function About() {
           <ul>
             <li>경기 구리시 우미내길 12-21</li>
             <li>02-454-9200</li>
-            <li>contact@jainmedical.co.kr</li>
+            <li>{siteConfig.email}</li>
           </ul>
           <p>목표: 빠르고 정확한 커뮤니케이션 제공</p>
         </div>

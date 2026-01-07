@@ -27,6 +27,14 @@ export const products = [
     name: "파소 커터 R (35°)",
     image: pathoCutterR35Detail,
     summary: "올마이티 교체 블레이드",
+    detailDescription: sharedDetailDescription,
+    features: [
+      "35° 칼날 각도",
+      "50매입/1박스",
+      "표준형 마이크로톰 칼날",
+      "안정적인 절삭력"
+    ],
+    application: "임상병리과, 조직검사실",
   },
   {
     id: "patho-cutter-hp-r-35",
