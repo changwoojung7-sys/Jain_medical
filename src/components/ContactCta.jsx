@@ -2,6 +2,14 @@ import React, { useMemo, useState } from "react";
 import { siteConfig } from "../config/siteConfig.js";
 
 export default function ContactCta() {
+  const [form, setForm] = useState({
+    company: "",
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
   const [isMailModalOpen, setIsMailModalOpen] = useState(false);
 
   const getMailLinks = () => {
