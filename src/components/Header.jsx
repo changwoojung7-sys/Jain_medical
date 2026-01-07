@@ -1,6 +1,8 @@
 import React from "react";
 import { siteConfig } from "../config/siteConfig.js";
 
+import logo from "../assets/logo.png";
+
 function scrollToId(id) {
   const el = document.getElementById(id);
   if (!el) return;
@@ -12,7 +14,7 @@ export default function Header({ routes }) {
     <header className="header">
       <div className="container header-inner">
         <a className="brand" href="#home" onClick={(e) => { e.preventDefault(); scrollToId("home"); }}>
-          <img src="/src/assets/logo.png" alt="Jain Medical Logo" className="brand-logo" />
+          <img src={logo} alt="Jain Medical Logo" className="brand-logo" />
           <span>{siteConfig.companyName}</span>
         </a>
 
