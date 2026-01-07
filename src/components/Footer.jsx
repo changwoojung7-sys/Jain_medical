@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <strong>{siteConfig.companyName}</strong> · 대표 {siteConfig.ceoName}
             <div style={{ marginTop: 6 }}>
-              {siteConfig.address} · {siteConfig.phone} · {siteConfig.email}
+              {siteConfig.address} · Tel: {siteConfig.phone} · Mobile: {siteConfig.mobile} · Fax: {siteConfig.fax} · {siteConfig.email}
             </div>
           </div>
           <div>

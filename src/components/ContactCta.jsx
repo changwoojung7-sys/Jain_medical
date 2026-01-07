@@ -11,6 +11,7 @@ export default function ContactCta() {
   });
 
   const [isMailModalOpen, setIsMailModalOpen] = useState(false);
+  const [isPhoneModalOpen, setIsPhoneModalOpen] = useState(false);
 
   const getMailLinks = () => {
     const subject = `[${siteConfig.companyName}] 제품 문의/견적 요청`;
@@ -56,9 +57,9 @@ ${form.message}
             <button className="btn primary" onClick={() => setIsMailModalOpen(true)}>메일로 보내기</button>
             <button
               className="btn"
-              onClick={() => alert(`문의 전화: ${siteConfig.phone}`)}
+              onClick={() => setIsPhoneModalOpen(true)}
             >
-              전화하기
+              전화 및 FAX
             </button>
           </div>
         </div>
@@ -101,6 +102,29 @@ ${form.message}
             <button className="btn" onClick={() => handleMailClick("gmail")} style={{ background: "#EA4335", color: "white", border: "none" }}>구글(Gmail)</button>
             <button className="btn" onClick={() => handleMailClick("default")}>기본 메일 앱</button>
             <button className="btn" onClick={() => setIsMailModalOpen(false)} style={{ marginTop: "12px", background: "transparent", border: "1px solid var(--line)" }}>취소</button>
+          </div>
+        </div>
+      )}
+
+      {isPhoneModalOpen && (
+        <div className="modal-overlay" onClick={() => setIsPhoneModalOpen(false)}>
+          <div className="modal-content" style={{ background: "#1a1b26", padding: "24px", minWidth: "300px", maxWidth: "400px", display: "flex", flexDirection: "column", gap: "16px" }} onClick={(e) => e.stopPropagation()}>
+            <h3 style={{ marginTop: 0 }}>연락처 정보</h3>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px", fontSize: "16px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "8px" }}>
+                <span style={{ color: "var(--muted)" }}>휴대전화</span>
+                <a href={`tel:${siteConfig.mobile.replaceAll("-", "")}`} style={{ color: "var(--text)", textDecoration: "none", fontWeight: "bold" }}>{siteConfig.mobile}</a>
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "8px" }}>
+                <span style={{ color: "var(--muted)" }}>회사</span>
+                <a href={`tel:${siteConfig.phone.replaceAll("-", "")}`} style={{ color: "var(--text)", textDecoration: "none", fontWeight: "bold" }}>{siteConfig.phone}</a>
+              </div>
+              <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "8px" }}>
+                <span style={{ color: "var(--muted)" }}>FAX</span>
+                <span style={{ color: "var(--text)", fontWeight: "bold" }}>{siteConfig.fax}</span>
+              </div>
+            </div>
+            <button className="btn" onClick={() => setIsPhoneModalOpen(false)} style={{ marginTop: "8px", width: "100%" }}>닫기</button>
           </div>
         </div>
       )}

@@ -76,11 +76,16 @@ export default function About() {
         <div className="card">
           <h3>오시는 길 / 연락처</h3>
           <ul>
-            <li>경기 구리시 우미내길 12-21</li>
-            <li>02-454-9200</li>
+            <li>{siteConfig.address}</li>
+            <li>Tel: {siteConfig.phone}</li>
+            <li>Mobile: {siteConfig.mobile}</li>
+            <li>Fax: {siteConfig.fax}</li>
             <li>{siteConfig.email}</li>
           </ul>
-          <p>목표: 빠르고 정확한 커뮤니케이션 제공</p>
+          <div style={{ marginTop: 20, fontSize: 14, color: "var(--muted)" }}>
+            <div>운영시간: {siteConfig.businessHours}</div>
+            <div style={{ marginTop: 6 }}>© 2026 {siteConfig.companyName}. All rights reserved.</div>
+          </div>
         </div>
       </section>
 
