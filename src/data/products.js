@@ -8,11 +8,12 @@ const sharedDetailDescription = "뛰어난 예리함을 실현하여 조직학�
 export const products = [
   {
     id: "patho-cutter-r-22",
-    category: "임상병리실 소모품",
+    category: "자인메디컬 프리미엄 3종 라인업",
     name: "파소 커터 R (22°)",
     image: pathoCutterR22Detail,
     detailImage: pathoCutterR22Detail,
     summary: "날카로운 예리함을 추구한 교체날",
+    description: "극도로 얇은 절편(Ultra-thin section)이 필요할 때 사용합니다. 저항이 매우 적어 미세 구조 관찰용 조직에 최적화되어 있습니다.",
     detailDescription: sharedDetailDescription,
     features: [
       "22° 칼날 각도",
@@ -24,10 +25,11 @@ export const products = [
   },
   {
     id: "patho-cutter-r-35",
-    category: "임상병리실 소모품",
+    category: "자인메디컬 프리미엄 3종 라인업",
     name: "파소 커터 R (35°)",
     image: pathoCutterR35Detail,
     summary: "올마이티 교체 블레이드",
+    description: "가장 선호도가 높은 표준 각도의 고성능 모델입니다. 부드러운 절삭력으로 특수 염색 및 면역 조직 화학 검사용 절편 제작에 추천합니다.",
     detailDescription: sharedDetailDescription,
     features: [
       "35° 칼날 각도",
@@ -39,10 +41,11 @@ export const products = [
   },
   {
     id: "patho-cutter-hp-r-35",
-    category: "임상병리실 소모품",
+    category: "자인메디컬 프리미엄 3종 라인업",
     name: "파소 커터 HP-R (35°)",
     image: pathoCutterHpR35,
     summary: "높은 프로파일, 내구성, 날카로움 모두 가진 고품질 교체 블레이드",
+    description: "R 시리즈의 절삭력에 내구성을 더한 상위 모델입니다. 비교적 단단한 조직이나 연속 절편 제작 시에도 칼날 마모가 적어 경제적이고 효율적입니다.",
     detailDescription: sharedDetailDescription,
     features: [
       "35° 칼날 각도",
