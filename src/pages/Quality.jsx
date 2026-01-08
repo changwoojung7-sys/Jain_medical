@@ -8,17 +8,17 @@ export default function Quality() {
   return (
     <Section
       title="품질 관리"
-      subtitle="현장의 목소리에 귀 기울이는 1인 파트너, 자인메디컬"
+      subtitle="현장의 목소리에 귀 기울이는 1인 파트너, 자인메디칼"
     >
       <div className="quality-content" style={{ display: 'grid', gap: '60px' }}>
 
         {/* Section 1 */}
         <div className="quality-section">
           <h3 style={{ fontSize: '24px', marginBottom: '20px', borderLeft: '4px solid var(--brand)', paddingLeft: '16px' }}>
-            [자인메디컬(JAIN MEDICAL) 제품 품질관리]
+            [자인메디칼(JAIN MEDICAL) 제품 품질관리]
           </h3>
           <p style={{ marginBottom: '30px', color: 'var(--muted)', fontSize: '16px' }}>
-            자인메디컬은 글로벌 병리 조직 검사의 기준이 되는 Erma 사의 제품 중, 정밀도와 내구성이 가장 뛰어난 '프리미엄 고성능(R & HP-R)' 라인업만을 전문적으로 공급합니다.
+            자인메디칼은 글로벌 병리 조직 검사의 기준이 되는 Erma 사의 제품 중, 정밀도와 내구성이 가장 뛰어난 '프리미엄 고성능(R & HP-R)' 라인업만을 전문적으로 공급합니다.
           </p>
 
           <h4 style={{ fontSize: '20px', marginBottom: '20px', color: 'var(--text)', display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -36,7 +36,7 @@ export default function Quality() {
             </li>
             <li style={{ background: 'rgba(255,255,255,0.03)', padding: '20px', borderRadius: '16px', border: '1px solid var(--line)' }}>
               <strong style={{ display: 'block', marginBottom: '8px', fontSize: '18px', color: '#5de1ff' }}>1인 책임 검수</strong>
-              <span style={{ color: 'var(--muted)', lineHeight: '1.6' }}>자인메디컬은 대표가 직접 제품의 로트(Lot) 번호와 패키징 상태를 전수 검사하여, 최상의 컨디션을 유지한 제품만을 직송합니다.</span>
+              <span style={{ color: 'var(--muted)', lineHeight: '1.6' }}>자인메디칼은 대표가 직접 제품의 로트(Lot) 번호와 패키징 상태를 전수 검사하여, 최상의 컨디션을 유지한 제품만을 직송합니다.</span>
             </li>
           </ul>
         </div>

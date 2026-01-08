@@ -8,7 +8,7 @@ const sharedDetailDescription = "뛰어난 예리함을 실현하여 조직학�
 export const products = [
   {
     id: "patho-cutter-r-22",
-    category: "자인메디컬 프리미엄 3종 라인업",
+    category: "자인메디칼 프리미엄 3종 라인업",
     name: "Patho cutter R 22°",
     image: pathoCutterR22Detail,
     detailImage: pathoCutterR22Detail,
@@ -25,7 +25,7 @@ export const products = [
   },
   {
     id: "patho-cutter-r-35",
-    category: "자인메디컬 프리미엄 3종 라인업",
+    category: "자인메디칼 프리미엄 3종 라인업",
     name: "Patho cutter R 35°",
     image: pathoCutterR35Detail,
     summary: "올마이티 교체 블레이드",
@@ -41,7 +41,7 @@ export const products = [
   },
   {
     id: "patho-cutter-hp-r-35",
-    category: "자인메디컬 프리미엄 3종 라인업",
+    category: "자인메디칼 프리미엄 3종 라인업",
     name: "Patho cutter HP-R 35°",
     image: pathoCutterHpR35,
     summary: "높은 프로파일, 내구성, 날카로움 모두 가진 고품질 교체 블레이드",

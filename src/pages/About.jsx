@@ -9,9 +9,9 @@ export default function About() {
       {/* 한눈에 보는 자인메디컬 */}
       <section className="about-overview">
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-          <h3 style={{ fontSize: '26px', marginBottom: '16px' }}>[한눈에 보는 자인메디컬: 10년의 신뢰, 전문성의 깊이]</h3>
+          <h3 style={{ fontSize: '26px', marginBottom: '16px' }}>[한눈에 보는 자인메디칼: 10년의 신뢰, 전문성의 깊이]</h3>
           <p style={{ color: 'var(--muted)', fontSize: '17px', lineHeight: '1.6' }}>
-            자인메디컬은 단순한 유통을 넘어, 병리 진단 현장의 효율과 정확성을 높이는 <strong style={{ color: '#5de1ff' }}>'임상 맞춤형 솔루션'</strong>을 공급합니다.
+            자인메디칼은 단순한 유통을 넘어, 병리 진단 현장의 효율과 정확성을 높이는 <strong style={{ color: '#5de1ff' }}>'임상 맞춤형 솔루션'</strong>을 공급합니다.
           </p>
         </div>
 
@@ -74,21 +74,21 @@ export default function About() {
         {/* 소개 문구 */}
         <div style={{ textAlign: 'left', marginBottom: '20px', marginTop: '0px' }}>
           <p style={{ color: 'var(--muted)', lineHeight: '1.6' }}>
-            "자인메디컬은 Erma 사의 공식 라인업 중 '고성능(R/HP-R)' 모델만을 엄선하여 취급하는 전문 업체입니다"
+            "자인메디칼은 Erma 사의 공식 라인업 중 '고성능(R/HP-R)' 모델만을 엄선하여 취급하는 전문 업체입니다"
           </p>
         </div>
 
         {/* 인사말 & 경영 철학 */}
         <section className="about-greeting">
           <div className="greeting-image-wrapper">
-            <img src={ceoImg} alt="자인메디컬 현장" />
+            <img src={ceoImg} alt="자인메디칼 현장" />
           </div>
 
           <div className="card greeting-card">
             <div className="greeting-content">
               <h3>인사말 & 경영 철학</h3>
               <p>
-                자인메디컬은 병리 진단 현장에서 사용되는 커터날을 비롯한 소모품의 실질적인 소요량과 현장의 긴급성을 누구보다 잘 이해하고 있습니다.
+                자인메디칼은 병리 진단 현장에서 사용되는 커터날을 비롯한 소모품의 실질적인 소요량과 현장의 긴급성을 누구보다 잘 이해하고 있습니다.
                 우리는 단순히 예리한 날을 공급하는 것을 넘어, 그 도구를 사용하는 임상병리사의 숙련도와 안전까지 고려한 사후 관리가 진정한 서비스의 시작이라고 믿습니다.
               </p>
               <p>
@@ -108,13 +108,13 @@ export default function About() {
 
         {/* 연혁 및 조직 구성 */}
         <section className="about-history">
-          <h3 style={{ textAlign: 'center', marginBottom: '40px', fontSize: '24px' }}>[자인메디컬 & Erma: 신뢰와 기술의 동행]</h3>
+          <h3 style={{ textAlign: 'center', marginBottom: '40px', fontSize: '24px' }}>[자인메디칼 & Erma: 신뢰와 기술의 동행]</h3>
 
           <div className="history-comparison-grid">
             {/* Header */}
             <div className="history-header">Erma Japan (since 1908)</div>
             <div className="history-header center">연도</div>
-            <div className="history-header">자인메디컬 (since 2013)</div>
+            <div className="history-header">자인메디칼 (since 2013)</div>
 
             {/* Row 1 (~ 2012) */}
             <div className="history-item left">
@@ -138,7 +138,7 @@ export default function About() {
             </div>
             <div className="history-year">2013</div>
             <div className="history-item right">
-              <strong>자인메디컬 설립 (4월 10일)</strong>
+              <strong>자인메디칼 설립 (4월 10일)</strong>
               <p>Erma 고성능 3종 라인업 집중 취급 결정</p>
             </div>
 
@@ -194,7 +194,7 @@ export default function About() {
           <a href={siteConfig.naverMapUrl} target="_blank" rel="noopener noreferrer" title="네이버 지도 열기">
             <img
               src={mapImg}
-              alt="자인메디컬 위치"
+              alt="자인메디칼 위치"
               style={{ cursor: "pointer" }}
             />
           </a>

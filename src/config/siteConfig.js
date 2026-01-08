@@ -1,5 +1,5 @@
 export const siteConfig = {
-  companyName: "자인메디컬",
+  companyName: "자인메디칼",
   ceoName: "윤석신",
   mobile: "010-9061-5775",
   phone: "02-454-9200",
