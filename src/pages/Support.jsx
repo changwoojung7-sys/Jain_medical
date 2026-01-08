@@ -13,55 +13,57 @@ export default function Support() {
 
   return (
     <Section
-      title="고객 지원"
+      title="문의하기"
       subtitle="문의부터 자료 확인까지, 필요한 정보를 빠르게 제공하겠습니다."
     >
-      <div className="support-actions" style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
-        {!isAdmin ? (
-          <button
-            onClick={() => setShowAdminLogin(true)}
-            style={{ fontSize: '0.8rem', color: '#ccc', border: 'none', background: 'none', cursor: 'pointer' }}
-          >
-            ADMIN
-          </button>
-        ) : (
-          <span style={{ fontSize: '0.8rem', color: 'green', fontWeight: 'bold' }}>관리자 모드 ON</span>
-        )}
-      </div>
-
-      <div className="tabs">
-        <button
-          className={`tab ${activeTab === "notice" ? "active" : ""}`}
-          onClick={() => setActiveTab("notice")}
-        >
-          공지사항 / FAQ
-        </button>
-        <button
-          className={`tab ${activeTab === "resource" ? "active" : ""}`}
-          onClick={() => setActiveTab("resource")}
-        >
-          자료실
-        </button>
-      </div>
-
-      <div className="tab-content">
-        {activeTab === "notice" && (
-          <SimpleBoard
-            category="notice"
-            initialData={initialNotices}
-            isAdmin={isAdmin}
-          />
-        )}
-        {activeTab === "resource" && (
-          <SimpleBoard
-            category="resource"
-            initialData={initialResources}
-            isAdmin={isAdmin}
-          />
-        )}
-      </div>
-
       <ContactCta />
+
+      <div style={{ marginTop: "60px" }}>
+        <div className="support-actions" style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
+          {!isAdmin ? (
+            <button
+              onClick={() => setShowAdminLogin(true)}
+              style={{ fontSize: '0.8rem', color: '#ccc', border: 'none', background: 'none', cursor: 'pointer' }}
+            >
+              ADMIN
+            </button>
+          ) : (
+            <span style={{ fontSize: '0.8rem', color: 'green', fontWeight: 'bold' }}>관리자 모드 ON</span>
+          )}
+        </div>
+
+        <div className="tabs">
+          <button
+            className={`tab ${activeTab === "notice" ? "active" : ""}`}
+            onClick={() => setActiveTab("notice")}
+          >
+            공지사항 / FAQ
+          </button>
+          <button
+            className={`tab ${activeTab === "resource" ? "active" : ""}`}
+            onClick={() => setActiveTab("resource")}
+          >
+            자료실
+          </button>
+        </div>
+
+        <div className="tab-content">
+          {activeTab === "notice" && (
+            <SimpleBoard
+              category="notice"
+              initialData={initialNotices}
+              isAdmin={isAdmin}
+            />
+          )}
+          {activeTab === "resource" && (
+            <SimpleBoard
+              category="resource"
+              initialData={initialResources}
+              isAdmin={isAdmin}
+            />
+          )}
+        </div>
+      </div>
 
       {showAdminLogin && (
         <AdminLogin

@@ -20,7 +20,7 @@ export default function Header({ routes }) {
 
         <nav className="nav" aria-label="Main navigation">
           {routes
-            .filter((r) => r.id !== "home")
+            .filter((r) => r.id !== "home" && r.id !== "support")
             .map((r) => (
               <a
                 key={r.id}

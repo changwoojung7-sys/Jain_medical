@@ -211,7 +211,7 @@ export default function About() {
               <li>{siteConfig.address}</li>
               <li>Tel: {siteConfig.phone}</li>
               <li>Mobile: {siteConfig.mobile}</li>
-              <li>Fax: {siteConfig.fax}</li>
+
               <li>{siteConfig.email}</li>
               <li style={{ marginTop: '10px' }}>
                 <a

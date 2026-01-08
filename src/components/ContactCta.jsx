@@ -48,22 +48,6 @@ ${form.message}
   return (
     <>
       <div className="card" style={{ marginTop: 12 }}>
-        <div className="cta-bar" style={{ marginTop: 0, marginBottom: 14 }}>
-          <div className="left">
-            <strong>빠른 문의</strong>
-            <div className="small">작성 후 “메일로 보내기”를 누르면 기본 메일앱으로 연결됩니다.</div>
-          </div>
-          <div className="right">
-            <button className="btn primary" onClick={() => setIsMailModalOpen(true)}>메일로 보내기</button>
-            <button
-              className="btn"
-              onClick={() => setIsPhoneModalOpen(true)}
-            >
-              전화 및 FAX
-            </button>
-          </div>
-        </div>
-
         <div className="grid" style={{ gridTemplateColumns: "repeat(2, 1fr)" }}>
           <Field label="회사/기관명" value={form.company} onChange={(v) => setForm({ ...form, company: v })} />
           <Field label="담당자명" value={form.name} onChange={(v) => setForm({ ...form, name: v })} />
@@ -92,14 +76,30 @@ ${form.message}
             placeholder="예) 검체 채취용품 견적 요청 / 품목, 수량, 납품 일정 등을 적어주세요."
           />
         </div>
+
+        <div className="cta-bar" style={{ marginTop: 24, marginBottom: 0 }}>
+          <div className="left">
+            <strong>빠른 문의</strong>
+            <div className="small">작성 후 “메일로 보내기”를 누르면 기본 메일앱으로 연결됩니다.</div>
+          </div>
+          <div className="right">
+            <button className="btn primary" onClick={() => setIsMailModalOpen(true)}>메일로 보내기</button>
+            <button
+              className="btn"
+              onClick={() => setIsPhoneModalOpen(true)}
+            >
+              전화 문의
+            </button>
+          </div>
+        </div>
       </div>
 
       {isMailModalOpen && (
         <div className="modal-overlay" onClick={() => setIsMailModalOpen(false)}>
           <div className="modal-content" style={{ background: "#1a1b26", padding: "24px", minWidth: "300px", maxWidth: "400px", display: "flex", flexDirection: "column", gap: "12px" }} onClick={(e) => e.stopPropagation()}>
             <h3 style={{ marginTop: 0 }}>메일 발송 방법 선택</h3>
-            <button className="btn" onClick={() => handleMailClick("naver")} style={{ background: "#03C75A", color: "white", border: "none" }}>네이버 메일</button>
             <button className="btn" onClick={() => handleMailClick("gmail")} style={{ background: "#EA4335", color: "white", border: "none" }}>구글(Gmail)</button>
+            <button className="btn" onClick={() => handleMailClick("naver")} style={{ background: "#03C75A", color: "white", border: "none" }}>네이버 메일</button>
             <button className="btn" onClick={() => handleMailClick("default")}>기본 메일 앱</button>
             <button className="btn" onClick={() => setIsMailModalOpen(false)} style={{ marginTop: "12px", background: "transparent", border: "1px solid var(--line)" }}>취소</button>
           </div>
@@ -119,10 +119,7 @@ ${form.message}
                 <span style={{ color: "var(--muted)" }}>회사</span>
                 <a href={`tel:${siteConfig.phone.replaceAll("-", "")}`} style={{ color: "var(--text)", textDecoration: "none", fontWeight: "bold" }}>{siteConfig.phone}</a>
               </div>
-              <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "8px" }}>
-                <span style={{ color: "var(--muted)" }}>FAX</span>
-                <span style={{ color: "var(--text)", fontWeight: "bold" }}>{siteConfig.fax}</span>
-              </div>
+
             </div>
             <button className="btn" onClick={() => setIsPhoneModalOpen(false)} style={{ marginTop: "8px", width: "100%" }}>닫기</button>
           </div>

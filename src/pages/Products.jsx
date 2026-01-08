@@ -31,7 +31,9 @@ export default function Products() {
           {group === "자인메디컬 프리미엄 3종 라인업" && (
             <div style={{ marginBottom: '40px', maxWidth: '800px' }}>
               <p style={{ fontSize: '16px', lineHeight: '1.7', color: 'var(--text)' }}>
-                수많은 소모품 중 무엇을 써야 할지 고민되시나요? 자인메디컬은 화려한 광고보다 <strong style={{ color: '#5de1ff' }}>'현장에서 가장 잘 썰리는 칼날'</strong>을 찾는 임상병리사 선생님들의 마음을 먼저 생각합니다. 제가 직접 사용해보고 검증한 Erma 사의 핵심 제품 3종으로 병리실의 업무 효율을 높여드리겠습니다.
+                수많은 소모품 중 무엇을 써야 할지 고민되시나요? <br />
+                자인메디컬은 <strong style={{ color: '#5de1ff' }}>'현장에서 가장 잘 썰리는 칼날'</strong>을 찾는 임상병리사 선생님들의 마음을 먼저 생각합니다. <br />
+                직접 사용해보고 검증한 Erma 사의 핵심 제품 3종으로 병리실의 업무 효율을 높여드리겠습니다.
               </p>
             </div>
           )}
