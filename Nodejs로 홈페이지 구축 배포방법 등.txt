@@ -1,0 +1,116 @@
+ * Vite + React /  node.js 로 홈페이지 만들기.
+   - vscode 개발환경에서 만들어보자.
+
+http://localhost:5173/
+
+1) 프로젝트 생성 & 실행
+# 1) 새 프로젝트 생성 
+    - 파워쉘 또는 cmd 창에서 소스가 위치할 폴더로 들어가서 아래 실행하면 jainmedical-site 폴더에 패키지 생성됨. (이미완료)
+    npm create vite@latest jainmedical-site -- --template react
+    cd jainmedical-site
+
+# 2) 의존성 설치
+npm install
+
+# 3) 실행 테스트
+npm run dev
+
+
+--파일구조
+
+jainmedical-site/
+  src/
+    main.jsx
+    App.jsx
+    styles.css
+    config/
+      siteConfig.js
+    components/
+      Header.jsx
+      Footer.jsx
+      Hero.jsx
+      Section.jsx
+      CardGrid.jsx
+      ContactCta.jsx
+    pages/
+      Home.jsx
+      About.jsx
+      Products.jsx
+      Quality.jsx
+      Support.jsx
+
+Cloudflare Pages 방식으로 지금 만들어둔 Vite + React 자인메디컬 홈페이지를 문제없이 배포할 수 있게,
+👉 대시보드에서 누르는 순서 + 필요한 설정 + 주의사항까지 딱 맞게 정리해줄게.
+
+dist/
+  ├─ index.html
+  ├─ assets/
+
+2️⃣ Cloudflare Pages 
+👉 https://dash.cloudflare.com/
+
+📌 경로
+Workers & Pages → Create application → Pages → Connect to Git
+
+3️⃣ GitHub 
+git init
+git add .
+git commit -m "init jainmedical site"
+git branch -M main
+git remote add origin https://github.com/계정명/jainmedical-site.git
+git push -u origin main
+
+ Cloudflare Pages
+Framework preset	Vite
+Build command	npm run build
+Build output directory	dist
+Root directory	/
+Node version	18 (권장)
+
+👉 Save and Deploy
+
+
+5️⃣ 개발중인 홈페이지 도메인
+https://jain-medical.pages.dev
+
+6️⃣ 도메인 연결(추후)
+
+Cloudflare DNS
+Pages → Custom domains → Add domain
+ jainmedical.co.kr   /   www.jainmedical.co.kr
+
+ SSL / HTTPS / CDN
+
+7️⃣ Cloudflare Pages
+⚙ Settings → Functions
+현재 Functions 사용 안 함
+(추후 문의폼 API 만들 때 추가 가능)
+
+⚙ Settings → Build & deployments
+Production branch: main
+Auto deploy: ON
+
+✅ 서버 없이 동작
+mailto: 방식
+담당자 메일앱 자동 실행
+Cloudflare Pages 완전 호환
+
+👉 나중에 원하면:
+Cloudflare Pages Functions로
+DB 저장
+관리자 페이지
+자동 회신 메일
+전부 확장 가능
+
+
+✅ 배포 환경과 거의 동일하게 테스트 (빌드 테스트)
+
+👉 “Cloudflare Pages에서 이대로 뜰까?” 확인할 때
+
+1️⃣ 빌드
+npm run build
+
+2️⃣미리보기
+npm run preview
+➜  Local: http://localhost:4173/
+
