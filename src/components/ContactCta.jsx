@@ -7,7 +7,16 @@ export default function ContactCta() {
     name: "",
     phone: "",
     email: "",
-    message: "",
+    message: `* 납품일정 및 문의내용 :  2026-00-00 까지 아래 품목에 대한 견적 / 납품 의뢰 합니다.
+
+* 품목 및 수량
+--------------------------------------------------
+ 품목                    /    수량                   
+--------------------------------------------------
+Patho cutter R 22°    :           
+Patho cutter R 35°    :          
+Patho cutter HP-R 35° :        
+--------------------------------------------------`,
   });
 
   const [isMailModalOpen, setIsMailModalOpen] = useState(false);
@@ -62,7 +71,7 @@ ${form.message}
           <textarea
             value={form.message}
             onChange={(e) => setForm({ ...form, message: e.target.value })}
-            rows={6}
+            rows={10}
             style={{
               width: "100%",
               borderRadius: 14,

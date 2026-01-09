@@ -600,6 +600,12 @@ a {
   gap: 16px;
 }
 
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .product-card {
   display: block;
   background: rgba(255, 255, 255, 0.03);
